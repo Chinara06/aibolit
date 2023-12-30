@@ -1,0 +1,131 @@
+.store{
+  width: 100%;
+  background: var(--orange, #FFC59E);
+  padding: 200px 0 400px 150px;
+  &__row{
+    display: flex;
+    position: relative;
+  }
+  &__left {
+    width: 60%;
+    span{
+      padding-top: 30px;
+    }
+    &-svg{
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__title{
+    color: #FFF;
+    font-size: 80px;
+    font-weight: 400;
+  }
+
+  &__right{
+    width: 40%;
+    position: absolute;
+    right: 230px;
+    top: 55px ;
+    &-img{
+      position: absolute;
+      left: 55%;
+      bottom: - 10%;
+    }
+  }
+  &__label{
+    &-img{
+     padding: 0 50px 50px 50px;
+    }
+  }
+  &__form{
+    position: absolute;
+    bottom: 0;
+    left: 70%;
+    background: white;
+    padding: 200px 50px 100px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    row-gap: 20px;
+  }
+  &__field {
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    background: #ede9e8;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+  }
+  &__btn {
+    padding: 10px 0 ;
+    background: #FFC59E;
+    border-radius: 30px;
+    color: #FFFF;
+    border: none;
+    box-shadow: 1px 9px 8px -4px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+  }
+  &__text{
+    text-align: center;
+    color: #FFC59E;
+  }
+}
+
+@media (max-width: 992px) {
+  .store__title{
+    font-size: 50px;
+  }
+  .store__left-svg{
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 886px) {
+  .store{
+    padding-left: 50px;
+  }
+  .store__title{
+    font-size: 40px;
+  }
+  .store__left-svg{
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 676px) {
+  .store__title{
+    font-size: 35px;
+  }
+  .store__left-svg {
+  flex-direction: column;
+    padding-right: 200px;
+  }
+  .store__form{
+    width: 230px;
+    padding: 80px 20px 50px;
+  }
+  .store__img{
+    width: 400px;
+  }
+  }
+
+@media (max-width: 576px) {
+  .store__right{
+    width: 35%;
+  }
+  .store__title{
+    font-size: 30px;
+  }
+  .store__form{
+    width: 190px;
+    padding: 50px 10px 30px;
+    position: absolute;
+    left: 90%;
+  }
+  .store__img{
+    width: 300px;
+  }
+}

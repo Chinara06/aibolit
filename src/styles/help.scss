@@ -1,0 +1,42 @@
+.help{
+  width: 100%;
+  background: #FFFEFE;
+  padding: 316px 0  316px 0 ;
+  position: relative;
+  &__row{
+    align-items: center;
+  }
+  &__title{
+    color: var(--brown, #59443F);;
+    font-size: 144px;
+    font-weight: 700;
+    line-height: 110px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__text{
+    color: var(--text, #080606);
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 110px;
+    text-align: center;
+  }
+  img{
+    position: absolute;
+    right: 380px;
+    bottom: 150px;
+  }
+}
+
+@media (max-width: 676px) {
+  .help__title{
+    font-size: 100px;
+  }
+  .help__text{
+    font-size: 50px;
+  }
+  .help__img{
+   width: 200px  ;
+  }
+}
+

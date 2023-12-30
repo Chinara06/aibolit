@@ -1,0 +1,126 @@
+.history{
+  width: 100%;
+  padding: 180px 0 ;
+  background: #FBF8F8;
+  position: relative;
+
+  .swiper {
+    &__box{
+      position: relative;
+    }
+    width: 80%;
+    &-button-prev-el{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 3%;
+      z-index: 999;
+      display: inline-block;
+      &:hover{
+        svg {
+          g{
+            path{
+              fill: #e85f02;
+
+            }
+          }
+        }
+        svg{
+          path{
+            fill: white;
+          }
+        }
+      }
+    }
+    &-button-next-el{
+      z-index: 999;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 3%;
+      display: inline-block;
+
+      &:hover {
+        svg {
+          g{
+            path{
+              fill: #e85f02;
+
+            }
+          }
+        }
+        svg {
+          path {
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+  &__row{
+
+    text-align: center;
+  }
+  &__title{
+    color: var(--text, #080606);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  &__text{
+    color: var(--brown, #59443F);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: start;
+    padding: 48px 511px 36px 510px;
+    //padding: 48px 510px 36px 510px;
+  }
+  &__titles{
+    color: var(--orange, #FFC59E);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  &__subtitle{
+    color: var(--text, #080606);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    padding-bottom: 48px;
+  }
+  &-user{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .history__text {
+    padding: 48px 300px 36px 300px;
+  }
+  .swiper{
+    width: 100%;
+  }
+  .swiper-wrapper {
+    column-gap: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .history__text {
+    padding: 48px 200px 36px 200px;
+  }
+}
+
+@media (max-width: 676px) {
+  .history__text {
+    padding: 48px 100px 36px 100px;
+  }
+}
+
